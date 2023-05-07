@@ -1,16 +1,14 @@
 import './Hero.css';
-import Portrait from '../assets/portrait.jpg';
+import Portrait from '../../assets/portrait.jpg';
 import Palette from './Palette';
-import Marker from './Marker';
+import Marker from '../ui/Marker';
 
 export default function Hero() {
   return (
     <section className="Hero">
       <div className="Hero__left">
         <Marker content="Hello World" />
-        <p className="Hero__left__heading">
-          I'm Christian de&nbsp;Jesus.
-        </p>
+        <p className="Hero__left__heading">I'm Christian de&nbsp;Jesus.</p>
         <Marker content="About" />
         <p className="Hero__left__text">
           I'm a Computer Science student and Web Developer based in Cebu,
