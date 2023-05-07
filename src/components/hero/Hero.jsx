@@ -13,8 +13,8 @@ export default function Hero() {
         <p className="Hero__left__text">
           I'm a Computer Science student and Web Developer based in Cebu,
           Philippines. I design and develop <mark>modern web applications</mark>{' '}
-          with a focus on creating a great user experience without compromising
-          on performance and scalability.
+          with a focus on great UI/UX without compromising performance or
+          accessibility.
         </p>
         <p className="Hero__left__text">
           You can find me organizing extracurricular activities in my
