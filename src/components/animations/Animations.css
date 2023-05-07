@@ -1,8 +1,6 @@
-.Hero {
-  animation: 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) fly-in;
-}
-
-.ProjectCard {
+.Hero,
+.ProjectCard,
+.Contact > *:not(.Marker) {
   animation: 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) fly-in;
 }
 

@@ -26,6 +26,7 @@
   background-color: var(--primary);
   font-size: clamp(1rem, 1.5lvw, 4rem);
   font-weight: 600;
+  font-family: 'Sora';
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-left: auto;
@@ -45,5 +46,13 @@
   .Contact__form > input,
   .Contact__form > textarea {
     padding: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Contact__form__btn--submit {
+    width: 100%;
+    padding: 8px 0;
+    margin-inline: auto;
   }
 }

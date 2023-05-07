@@ -5,12 +5,24 @@
   gap: 16px;
   border-top: var(--border-alt);
   padding-top: 24px;
+  height: 100%;
 }
 
-.ProjectCard__cover-img {
+.ProjectCard__cover--img {
   object-fit: cover;
   max-width: 100%;
   aspect-ratio: 16 / 9;
+  transition: 0.5s ease-in-out transform;
+  overflow: hidden;
+}
+
+.ProjectCard__cover {
+  overflow: hidden;
+}
+
+.ProjectCard--link:hover .ProjectCard__cover--img,
+.ProjectCard--link:focus .ProjectCard__cover--img {
+  transform: scale(1.05);
 }
 
 .ProjectCard__heading {
@@ -26,6 +38,7 @@
 }
 
 .ProjectCard__view {
+  margin-top: auto;
   margin-left: auto;
   font-size: clamp(0.6rem, 1lvw, 2.5rem);
   display: flex;

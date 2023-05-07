@@ -1,23 +1,20 @@
 import './ProjectCard.css';
 
-export default function ProjectCard() {
+export default function ProjectCard({ name, description, url, img }) {
   return (
-    <a className="ProjectCard--link" href="github.com" target="_blank">
+    <a
+      className="ProjectCard--link"
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+    >
       <article className="ProjectCard">
-        <img
-          className="ProjectCard__cover-img"
-          src="https://picsum.photos/seed/picsum/200/300"
-          alt="Acta, a Blogging Application"
-        />
-        <h3 className="ProjectCard__heading">Acta: Blogging Application</h3>
-        <p className="ProjectCard__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-          repellat est, officia provident nam commodi dolores adipisci aperiam
-          minima reprehenderit officiis a, doloribus optio inventore. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Error, repellat
-          est, officia provident nam commodi dolores adipisci aperiam minima
-          reprehenderit officiis a, doloribus optio inventore.
-        </p>
+        <div className="ProjectCard__cover">
+          <img className="ProjectCard__cover--img" src={img} alt={name} />
+        </div>
+
+        <h3 className="ProjectCard__heading">{name}</h3>
+        <p className="ProjectCard__description">{description}</p>
         <div className="ProjectCard__view">
           View Repository
           <svg

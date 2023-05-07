@@ -5,7 +5,12 @@ export default function Contact() {
   return (
     <section className="Contact">
       <Marker content="Send me a message" />
-      <form className="Contact__form">
+      <form
+        className="Contact__form"
+        action="mailto:ian.deejay.iv@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
         <input
           aria-label="Name"
           type="text"
@@ -27,7 +32,7 @@ export default function Contact() {
           rows={7}
           required
         ></textarea>
-        <button className="Contact__form__btn--submit" type="button">
+        <button className="Contact__form__btn--submit" type="submit">
           Submit
         </button>
       </form>
