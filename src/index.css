@@ -17,16 +17,13 @@
   --primary: #fe5a21;
 }
 
-html {
-  height: 100%;
-}
-
-#root {
+html,
+#root,
+body {
   height: 100%;
 }
 
 body {
-  height: 100%;
   font-family: 'DM Sans', sans-serif;
   background-color: var(--background);
   color: var(--text);
