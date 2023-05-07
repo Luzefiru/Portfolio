@@ -1,0 +1,33 @@
+/* portrait color palette divs */
+.color-palette__color {
+  --hero-primary: #ffbd00;
+  --hero-secondary: #a2010f;
+  --hero-tertiary: #fd4d03;
+  --hero-neutral: #d8d5c8;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(150%, 0);
+}
+
+.color--primary {
+  background-color: var(--hero-primary);
+  transform: translate(150%, 0);
+}
+
+.color--secondary {
+  background-color: var(--hero-secondary);
+  transform: translate(150%, 150%);
+}
+
+.color--tertiary {
+  background-color: var(--hero-tertiary);
+  transform: translate(150%, 300%);
+}
+
+.color--neutral {
+  background-color: var(--hero-neutral);
+  transform: translate(150%, 450%);
+}

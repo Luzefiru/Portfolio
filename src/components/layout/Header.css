@@ -1,3 +1,30 @@
 .Header {
-  height: 64px;
+  grid-column: span 8;
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px var(--text) solid;
+  padding: 0 0 8px 0;
+  font-weight: 500;
+  font-family: 'Sora';
+  font-size: clamp(0.8rem, calc(3lvw), 1rem);
+}
+
+.Header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.Header__logo > a {
+  font-size: clamp(0.8rem, calc(3lvw), 1rem);
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.Header__logo > a:hover {
+  color: var(--primary);
+}
+
+.Header__copyright {
+  margin-left: auto;
 }

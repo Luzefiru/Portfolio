@@ -1,0 +1,25 @@
+.Hero {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.Hero__left {
+  grid-column-start: span 5;
+}
+
+.Hero__left__heading {
+  font-size: 2rem;
+}
+
+.Hero__left__heading--greeting {
+  font-size: 4rem;
+}
+
+.Hero__right {
+  grid-column: 6 / 9;
+  position: relative;
+}
+
+.Hero__right__portrait {
+  max-width: 100%;
+}
