@@ -19,9 +19,9 @@ export default function Hero() {
           on performance and scalability.
         </p>
         <p className="Hero__left__text">
-          You can find organizing extracurricular activities in my university's
-          tech organizations. I am always looking for new challenges and
-          opportunities to learn and grow as a developer,{' '}
+          You can find me organizing extracurricular activities in my
+          university's tech organizations. I am always looking for new
+          challenges and opportunities to learn and grow as a developer,{' '}
           <mark>one line of code at a time</mark>.
         </p>
         <Marker content="Contact" />

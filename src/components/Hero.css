@@ -13,13 +13,14 @@
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 32px;
+  margin-top: 24px;
 }
 
 .Hero__left__text {
   margin-top: 8px;
   font-size: 1.25rem;
   line-height: 1.4;
-  width: 48ch;
+  width: 50ch;
   margin-bottom: 32px;
 }
 
