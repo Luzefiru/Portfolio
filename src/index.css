@@ -12,9 +12,12 @@
 :root {
   --text: rgb(241, 241, 241);
   --subtext: rgb(65, 65, 65);
-  --background-text: rgb(20, 20, 20);
+  --background-text: rgb(12, 12, 12);
   --background: #010101;
+  --background-layer: #141414;
   --primary: #fe5a21;
+  --border: 1.5px var(--text) solid;
+  --border-alt: 1.5px var(--subtext) solid;
 }
 
 html,

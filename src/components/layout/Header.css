@@ -2,7 +2,7 @@
   grid-column: span 8;
   display: flex;
   align-items: center;
-  border-bottom: 1.5px var(--text) solid;
+  border-bottom: var(--border);
   padding: 0 0 8px 0;
   font-weight: 500;
   font-family: 'Sora', sans-serif;

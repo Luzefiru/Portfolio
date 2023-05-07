@@ -131,10 +131,11 @@
 /* decorations */
 .Hero__decor-text {
   position: absolute;
-  bottom: 0;
+  bottom: 7.5lvh;
   right: -128px;
   font-weight: 900;
-  font-size: 16rem;
+  font-size: clamp(12rem, 18lvw, 15rem);
+  white-space: nowrap;
   letter-spacing: -8px;
   line-height: 0;
   color: var(--background-text);

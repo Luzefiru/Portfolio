@@ -4,8 +4,15 @@
   overflow-x: hidden;
 }
 
-.Main {
+.Main > section {
   margin: 64px;
+}
+
+.section-divider {
+  border: none;
+  height: 1.5px;
+  background-color: var(--text);
+  margin: 24px 0;
 }
 
 @media (max-width: 425px) {
@@ -15,7 +22,7 @@
     overflow-x: hidden;
   }
 
-  .Main {
+  .Main > section {
     margin: 0 8px;
   }
 }
@@ -27,7 +34,7 @@
     overflow-x: hidden;
   }
 
-  .Main {
+  .Main > section {
     margin: 0 16px;
   }
 }

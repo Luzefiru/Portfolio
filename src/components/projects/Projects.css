@@ -1,0 +1,22 @@
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25lvw, 1fr));
+  gap: 48px;
+  position: relative;
+}
+
+.Projects > .Marker {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 1024px) {
+  .Projects {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Projects {
+    grid-template-columns: 1fr;
+  }
+}

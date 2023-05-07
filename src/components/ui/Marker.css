@@ -16,6 +16,7 @@
   transition: 100ms ease-out transform;
 }
 
-.Marker:hover .Marker__icon {
+.Marker:hover .Marker__icon,
+.Marker:focus .Marker__icon {
   transform: rotate(90deg);
 }
