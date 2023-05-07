@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 48px;
+  position: relative;
 }
 
 .Hero__left {
@@ -81,4 +82,17 @@
 .Hero__left__text:hover mark::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* decorations */
+.Hero__decor-text {
+  position: absolute;
+  bottom: 0;
+  right: -128px;
+  font-weight: 900;
+  font-size: 16rem;
+  letter-spacing: -8px;
+  line-height: 0;
+  color: var(--background-text);
+  z-index: -1;
 }

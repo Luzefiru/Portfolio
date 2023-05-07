@@ -12,6 +12,7 @@
 :root {
   --text: rgb(241, 241, 241);
   --subtext: rgb(65, 65, 65);
+  --background-text: rgb(20, 20, 20);
   --background: #010101;
   --primary: #fe5a21;
 }

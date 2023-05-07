@@ -71,6 +71,7 @@ export default function Hero() {
         />
         <Palette />
       </div>
+      <div className="Hero__decor-text">ゼフィル</div>
     </section>
   );
 }
