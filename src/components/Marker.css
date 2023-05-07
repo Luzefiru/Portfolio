@@ -1,8 +1,9 @@
 .Marker {
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 3lvw, 2rem);
   display: flex;
   align-items: center;
   font-weight: 600;
+  font-family: 'Sora', sans-serif;
 }
 
 .Marker__icon {

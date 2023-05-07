@@ -14,11 +14,12 @@
   font-weight: 600;
   margin-bottom: 32px;
   margin-top: 24px;
+  font-family: 'Sora', sans-serif;
 }
 
 .Hero__left__text {
   margin-top: 8px;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2lvw, 1.25rem);
   line-height: 1.4;
   width: 50ch;
   margin-bottom: 32px;
@@ -27,6 +28,48 @@
 .Hero__right {
   grid-column: 6 / 9;
   position: relative;
+}
+
+@media (max-width: 1440px) {
+  .Header {
+    margin-bottom: 24px;
+  }
+
+  .Hero {
+    gap: 16px;
+  }
+
+  .Marker {
+    font-size: clamp(1.3rem, 3lvw, 2rem);
+  }
+
+  .Hero__left__heading {
+    font-size: clamp(2rem, 5lvw, 4rem);
+    font-weight: 600;
+    margin: 16px 0;
+  }
+
+  .Hero__left,
+  .Hero__right {
+    grid-column-start: span 8;
+  }
+
+  .Hero__left__text {
+    width: auto;
+  }
+
+  .Hero__right__portrait {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+
+@media (1024px <= width <= 1440px) {
+  .Hero__right__portrait {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: 25% 25%;
+  }
 }
 
 .Hero__right__portrait {

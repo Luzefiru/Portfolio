@@ -7,3 +7,27 @@
 .Main {
   margin: 64px;
 }
+
+@media (max-width: 425px) {
+  .App {
+    height: 100%;
+    padding: 8px 16px;
+    overflow-x: hidden;
+  }
+
+  .Main {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    height: 100%;
+    padding: 24px 32px;
+    overflow-x: hidden;
+  }
+
+  .Main {
+    margin: 0 16px;
+  }
+}

@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="Hero__left">
         <Marker content="Hello World" />
         <p className="Hero__left__heading">
-          I'm&nbsp;Christian&nbsp;de&nbsp;Jesus.
+          I'm Christian de&nbsp;Jesus.
         </p>
         <Marker content="About" />
         <p className="Hero__left__text">
