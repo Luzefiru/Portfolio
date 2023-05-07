@@ -11,13 +11,14 @@
 
 :root {
   --text: rgb(241, 241, 241);
-  --subtext: rgb(65, 65, 65);
+  --subtext: rgb(51, 51, 51);
   --background-text: rgb(12, 12, 12);
   --background: #010101;
   --background-layer: #141414;
   --primary: #fe5a21;
+  --primary-alt: #cc471b;
   --border: 1.5px var(--text) solid;
-  --border-alt: 1.5px var(--subtext) solid;
+  --border-alt: 3px var(--subtext) dotted;
 }
 
 html,

@@ -1,0 +1,49 @@
+.Contact__form {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 5%;
+  gap: 24px;
+}
+
+.Contact__form > input,
+.Contact__form > textarea {
+  all: unset;
+  padding: 16px;
+  display: flex;
+  font-size: clamp(0.8rem, 1.35lvw, 3rem);
+  border: var(--border);
+  background-color: var(--background);
+}
+
+.Contact__form__btn--submit {
+  margin-left: auto;
+  all: unset;
+  display: grid;
+  place-items: center;
+  width: 128px;
+  padding: 16px 24px;
+  background-color: var(--primary);
+  font-size: clamp(1rem, 1.5lvw, 4rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.Contact__form__btn--submit:hover,
+.Contact__form__btn--submit:focus {
+  background-color: var(--primary-alt);
+}
+
+@media (max-width: 1024px) {
+  .Contact__form {
+    margin-top: 16px;
+  }
+
+  .Contact__form > input,
+  .Contact__form > textarea {
+    padding: 8px;
+  }
+}
