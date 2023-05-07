@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard';
 import Acta from '../../assets/acta.png';
 import Assetica from '../../assets/assetica.png';
 import Resumize from '../../assets/resumize.png';
+import Portfolio from '../../assets/portfolio.png';
 
 export default function Projects() {
   return (
@@ -33,15 +34,22 @@ var projects = [
   {
     name: 'Assetica',
     description:
-      'A full stack inventory management web application for the modern consumer. Built with EJS, Express.js, and MongoDB',
+      'A full stack inventory management web application for the modern consumer. Built with EJS, Express.js, and MongoDB.',
     url: 'https://github.com/Luzefiru/Assetica',
     img: Assetica,
   },
   {
     name: 'Resumize',
     description:
-      'A CV creator & .pdf Exporter web application for eager jobseekers. Built with React and Firebase',
+      'A CV creator & .pdf Exporter web application for eager jobseekers. Built with React and Firebase.',
     url: 'https://github.com/Luzefiru/Resumize',
     img: Resumize,
+  },
+  {
+    name: 'Portfolio',
+    description:
+      'A creative portfolio page showcasing my best web development projects. Built with React.',
+    url: 'https://github.com/Luzefiru/Portfolio',
+    img: Portfolio,
   },
 ];
