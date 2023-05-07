@@ -8,7 +8,7 @@ import Resumize from '../../assets/resumize.png';
 
 export default function Projects() {
   return (
-    <section class="Projects">
+    <section className="Projects">
       <Marker content="Projects" />
       {projects.map((project) => (
         <ProjectCard

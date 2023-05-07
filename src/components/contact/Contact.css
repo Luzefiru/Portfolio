@@ -1,3 +1,7 @@
+.Contact {
+  position: relative;
+}
+
 .Contact__form {
   margin-top: 48px;
   display: flex;
@@ -55,4 +59,19 @@
     padding: 8px 0;
     margin-inline: auto;
   }
+}
+
+/* decoration */
+
+.Contact__decor-text {
+  position: absolute;
+  bottom: -8px;
+  left: -128px;
+  font-weight: 900;
+  font-size: clamp(12rem, 18lvw, 15rem);
+  white-space: nowrap;
+  letter-spacing: -8px;
+  line-height: 0;
+  color: var(--background-text);
+  z-index: -1;
 }

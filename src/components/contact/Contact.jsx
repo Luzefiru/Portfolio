@@ -4,12 +4,12 @@ import Marker from '../ui/Marker';
 export default function Contact() {
   return (
     <section className="Contact">
-      <Marker content="Send me a message" />
+      <Marker content="Email me" />
       <form
         className="Contact__form"
         action="mailto:ian.deejay.iv@gmail.com"
         method="post"
-        enctype="text/plain"
+        encType="text/plain"
       >
         <input
           aria-label="Name"
@@ -36,6 +36,7 @@ export default function Contact() {
           Submit
         </button>
       </form>
+      <div className="Contact__decor-text">オレンジ</div>
     </section>
   );
 }
