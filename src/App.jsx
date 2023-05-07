@@ -1,4 +1,5 @@
 import './App.css';
+import './components/animations/Animations.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Hero from './components/hero/Hero';

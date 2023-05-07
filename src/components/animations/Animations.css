@@ -1,0 +1,19 @@
+.Hero {
+  animation: 1.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) fly-in;
+}
+
+/* list of animations */
+
+@keyframes fly-in {
+  from {
+    filter: blur(2px);
+    opacity: 0;
+    transform: translateY(40%);
+  }
+
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
