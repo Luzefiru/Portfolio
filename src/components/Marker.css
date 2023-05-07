@@ -1,5 +1,5 @@
 .Marker {
-  font-size: clamp(1.3rem, 3lvw, 2rem);
+  font-size: clamp(1.3rem, 2.25lvw, 3rem);
   display: flex;
   align-items: center;
   font-weight: 600;
