@@ -1,0 +1,20 @@
+.Marker {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.Marker__icon {
+  color: var(--subtext);
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  width: 32px;
+  transform: rotate(45deg);
+  transition: 100ms ease-out transform;
+}
+
+.Marker:hover .Marker__icon {
+  transform: rotate(90deg);
+}

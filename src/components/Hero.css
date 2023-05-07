@@ -1,6 +1,7 @@
 .Hero {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  gap: 48px;
 }
 
 .Hero__left {
@@ -8,11 +9,17 @@
 }
 
 .Hero__left__heading {
-  font-size: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 32px;
 }
 
-.Hero__left__heading--greeting {
-  font-size: 4rem;
+.Hero__left__text {
+  margin-top: 8px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  width: 48ch;
+  margin-bottom: 32px;
 }
 
 .Hero__right {
@@ -22,4 +29,56 @@
 
 .Hero__right__portrait {
   max-width: 100%;
+}
+
+.Hero__left__contacts {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.Hero__left__contacts svg {
+  color: var(--text);
+  width: 40px;
+}
+
+.Hero__left__contacts svg:hover {
+  animation: 50ms ease-out primary-fill forwards;
+}
+
+@keyframes primary-fill {
+  from {
+    color: var(--text);
+  }
+  to {
+    color: var(--primary);
+  }
+}
+
+/* underline styles */
+
+.Hero__left__text mark {
+  all: unset;
+  position: relative;
+}
+
+.Hero__left__text mark::after {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom right;
+}
+
+.Hero__left__text:hover mark::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
