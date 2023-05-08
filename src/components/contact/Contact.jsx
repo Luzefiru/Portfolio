@@ -10,6 +10,7 @@ export default function Contact() {
         action="mailto:ian.deejay.iv@gmail.com"
         method="post"
         encType="text/plain"
+        target="_blank"
       >
         <input
           aria-label="Name"
