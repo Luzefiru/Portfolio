@@ -21,8 +21,8 @@ export default function Contact() {
       setName('');
       setEmail('');
       setMessage('');
+      alert("Thank you for submitting an email! I'll get to you soon.");
     }
-    alert("Thank you for submitting an email! I'll get to you soon.");
   }, [state.succeeded]);
 
   return (
