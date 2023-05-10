@@ -22,6 +22,7 @@ export default function Contact() {
       setEmail('');
       setMessage('');
     }
+    alert("Thank you for submitting an email! I'll get to you soon.");
   }, [state.succeeded]);
 
   return (
