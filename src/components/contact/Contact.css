@@ -37,6 +37,13 @@
   cursor: pointer;
 }
 
+.Contact__form__btn--submit:hover:disabled,
+.Contact__form__btn--submit:disabled {
+  background-color: var(--subtext);
+  color: var(--background-text);
+  cursor: default;
+}
+
 .Contact__form__btn--submit:hover,
 .Contact__form__btn--submit:focus {
   background-color: var(--primary-alt);
