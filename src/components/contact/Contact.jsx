@@ -1,6 +1,8 @@
 import './Contact.css';
 import Marker from '../ui/Marker';
 import { useForm, ValidationError } from '@formspree/react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -21,7 +23,16 @@ export default function Contact() {
       setName('');
       setEmail('');
       setMessage('');
-      alert("Thank you for submitting an email! I'll get to you soon.");
+      toast.success("Message sent. I'll get back to you soon.", {
+        position: 'bottom-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      });
     }
   }, [state.succeeded]);
 
@@ -78,6 +89,18 @@ export default function Contact() {
         </button>
       </form>
       <div className="Contact__decor-text">オレンジ</div>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </section>
   );
 }
