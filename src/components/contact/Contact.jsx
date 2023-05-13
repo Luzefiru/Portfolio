@@ -28,14 +28,7 @@ export default function Contact() {
   return (
     <section className="Contact">
       <Marker content="Email me" />
-      <form
-        onSubmit={handleSubmit}
-        className="Contact__form"
-        action="mailto:ian.deejay.iv@gmail.com"
-        method="post"
-        encType="text/plain"
-        target="_blank"
-      >
+      <form onSubmit={handleSubmit} className="Contact__form">
         <input
           aria-label="Name"
           type="text"
