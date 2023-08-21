@@ -37,7 +37,7 @@ export default function Contact() {
   }, [state.succeeded]);
 
   return (
-    <section className="Contact">
+    <section className="Contact" id="contact">
       <Marker content="Email me" />
       <form onSubmit={handleSubmit} className="Contact__form">
         <input
