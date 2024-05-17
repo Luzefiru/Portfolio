@@ -6,6 +6,7 @@ import Acta from '../../assets/acta.png';
 import Assetica from '../../assets/assetica.png';
 import Resumize from '../../assets/resumize.png';
 import Portfolio from '../../assets/portfolio.png';
+import Leafe from '../../assets/leafe.png';
 
 export default function Projects() {
   return (
@@ -52,4 +53,10 @@ var projects = [
     url: 'https://github.com/Luzefiru/Portfolio',
     img: Portfolio,
   },
+  {
+    name: 'Leafe',
+    description: 'A UI/UX case study for a minimalistic story writing mobile application. Created with Figma.',
+    url: 'https://www.behance.net/gallery/198834831/Leafe-Mobile-Writing-App-UIUX-Case-Study',
+    img: Leafe
+  }
 ];
